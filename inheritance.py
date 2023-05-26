@@ -6,6 +6,16 @@
 #     init, attributes & methods within the parent class
 
 class Person:
+    # Class Attributes 
+
+    # goes above/outside __init__ 
+    # a variable that is shared between a class & its objects
+    # accessible wo an object,and can be called with the class name instead
+        # E.g. person.species  vs  obj_name.species 
+        # Either way works regardless
+
+    species = "Human"
+    
     def __init__(self, first_name, sur_name):
         self.first_name = first_name
         self.sur_name = sur_name
